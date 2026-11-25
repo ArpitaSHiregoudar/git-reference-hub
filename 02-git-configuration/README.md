@@ -1,29 +1,29 @@
-# 02 - Git Configuration
+# 02 — Git Configuration
 
-## 📋 Section Overview
-Understand how to configure Git across environments, manage credentials, customize developer ergonomics, and isolate personal vs work identities.
+> **Goal:** Learn how Git stores settings, set up your identity, configure SSH keys, create productivity aliases, and manage multiple profiles (personal vs work).
 
-## 🎯 Topic Checklist
-- [ ] **Configuration Scopes & Precedence**
-  - [ ] System level (`/etc/gitconfig` or Windows equivalent)
-  - [ ] Global level (`~/.gitconfig` or `%USERPROFILE%\.gitconfig`)
-  - [ ] Local level (`.git/config` inside repository)
-  - [ ] Worktree level (`.git/config.worktree`)
-  - [ ] Inspecting effective configuration (`git config --list --show-origin`)
-- [ ] **Essential Identity & Core Settings**
-  - [ ] User identity: `user.name` and `user.email`
-  - [ ] Default initial branch name: `init.defaultBranch main`
-  - [ ] Default editor configuration (VS Code, Nano, Vim)
-  - [ ] Line ending management (`core.autocrlf` for Windows vs macOS/Linux)
-  - [ ] Safe line conversions (`core.safecrlf`)
-- [ ] **Developer Ergonomics & Productivity**
-  - [ ] Global Git aliases for high-frequency commands
-  - [ ] Color output & UI personalization
-  - [ ] Pager configurations (`delta`, `less`)
-- [ ] **Authentication & Security Setup**
-  - [ ] SSH Key generation (Ed25519 vs RSA), agent caching, and GitHub association
-  - [ ] Personal Access Tokens (PATs) and fine-grained permissions
-  - [ ] Git Credential Manager (GCM) setup and credential caching
-- [ ] **Multi-Profile Git Configuration**
-  - [ ] Conditional configuration with `includeIf` (Personal vs Work repositories)
-  - [ ] Directory-based email and GPG signing segregation
+---
+
+## 📖 Study Roadmap
+
+Read in order. Each file covers one clear topic.
+
+| # | File | What You'll Learn | Time |
+|---|---|---|---|
+| 1 | [01-configuration-levels.md](./01-configuration-levels.md) | System vs Global vs Local config, precedence, how to inspect settings | ~4 min |
+| 2 | [02-essential-settings.md](./02-essential-settings.md) | Identity, default branch, editor, line endings, aliases | ~5 min |
+| 3 | [03-ssh-and-authentication.md](./03-ssh-and-authentication.md) | SSH key setup, PATs, Git Credential Manager | ~5 min |
+| 4 | [04-multi-profile-setup.md](./04-multi-profile-setup.md) | Conditional includes — separate personal and work Git identities | ~4 min |
+
+---
+
+## ✅ Concept Checklist
+
+- [ ] I know the three configuration levels (System, Global, Local) and their precedence.
+- [ ] I have set my `user.name` and `user.email`.
+- [ ] I know how to change the default branch name and editor.
+- [ ] I understand `core.autocrlf` and why line endings matter.
+- [ ] I have created useful Git aliases.
+- [ ] I can generate an SSH key and add it to GitHub.
+- [ ] I understand the difference between SSH keys and Personal Access Tokens.
+- [ ] I can set up separate Git identities for personal and work projects using `includeIf`.
