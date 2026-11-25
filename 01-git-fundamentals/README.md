@@ -1,26 +1,31 @@
-# 01 - Git Fundamentals
+# 01 — Git Fundamentals
 
-## 📋 Section Overview
-This module explores version control from first principles, establishing the mental model and architecture that powers Git under the hood.
+> **Goal:** Build a rock-solid foundation — understand *what* version control is, *why* Git exists, *how* it works internally, and get your first hands-on practice.
 
-## 🎯 Topic Checklist
-- [ ] **Core Concepts**
-  - [x] [What is Version Control? (CVCS vs DVCS comparison)](./01-what-is-version-control.md)
-  - [ ] Why Git won: speed, data integrity, distributed workflow
-  - [ ] Snapshots vs Deltas: How Git models repository history
-- [x] **Git Architecture & The Three Trees** — *See [git_architecture.md](./git_architecture.md)*
-  - [x] [Working Directory (untracked & modified files)](./git_architecture.md#1-the-working-directory-the-sandbox)
-  - [x] [Staging Area / Index (prepared snapshots)](./git_architecture.md#2-the-staging-area--the-index-the-launchpad)
-  - [x] [Repository / Commit History (immutable object graph)](./git_architecture.md#3-the-local-repository-the-permanent-vault)
-  - [x] [Remote tracking & distributed synchronization](./git_architecture.md#part-1-the-three-areas-the-three-trees-architecture)
-- [x] **The Git Object Database Internals** — *See [git_architecture.md](./git_architecture.md)*
-  - [x] [Content-Addressable Storage (SHA-1 / SHA-256 hashes)](./git_architecture.md#part-2-the-core-object-database-the-four-sacred-objects)
-  - [x] [Blobs (file contents, compression)](./git_architecture.md#1-the-blob-binary-large-object)
-  - [x] [Trees (directory structure & file naming)](./git_architecture.md#2-the-tree-directory-manifest)
-  - [x] [Commits (metadata, author, committer, parent pointer)](./git_architecture.md#3-the-commit-the-snapshot-envelope)
-  - [x] [Annotated Tags (permanent reference objects)](./git_architecture.md#4-the-annotated-tag-the-permanent-landmark)
-- [ ] **Hands-on Initiation**
-  - [ ] Initializing a fresh repository (`git init`)
-  - [ ] Inspecting the hidden `.git` folder structure (`objects`, `refs`, `HEAD`, `config`)
-  - [ ] Checking repository state with `git status`
-  - [ ] Creating and inspecting the first commit
+---
+
+## 📖 Study Roadmap
+
+Read the notes **in order**. Each file covers one clear concept and builds on the previous one.
+
+| # | File | What You'll Learn | Time |
+|---|---|---|---|
+| 1 | [01-what-is-version-control.md](./01-what-is-version-control.md) | What is VCS, why it exists, Local vs Centralized vs Distributed | ~5 min |
+| 2 | [02-why-git.md](./02-why-git.md) | How Git was born, why it won the VCS war, Git vs GitHub | ~4 min |
+| 3 | [03-git-architecture.md](./03-git-architecture.md) | The Three Areas, Four Object types, Snapshots vs Deltas, `.git` folder | ~6 min |
+| 4 | [04-first-steps-with-git.md](./04-first-steps-with-git.md) | `git init`, `git status`, your first commit, reading the `.git` folder | ~5 min |
+
+---
+
+## ✅ Concept Checklist
+
+Track your progress as you study:
+
+- [ ] I can explain what a Version Control System is in one sentence.
+- [ ] I know the difference between Local, Centralized, and Distributed VCS.
+- [ ] I know the story of why Linus Torvalds created Git.
+- [ ] I can clearly explain the difference between Git and GitHub.
+- [ ] I understand the three areas: Working Directory → Staging Area → Repository.
+- [ ] I can name the four Git object types (Blob, Tree, Commit, Tag).
+- [ ] I understand that Git stores snapshots, not deltas.
+- [ ] I have initialized a repository and made my first commit.
